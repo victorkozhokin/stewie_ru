@@ -172,7 +172,7 @@
         "name": "Показывать сообщение в углу экрана",
         "internalName": "bShowMessage",
         "internalCategory": "No PipBoy In Combat",
-        "description": "Показывает сообщение в углу экрана 'Нельзя использовать Пип-Бой во время боя' или 'Недостаточно AP для использования Пип-Бой в бою'."
+        "description": "Показывает сообщение в углу экрана 'Нельзя использовать Пип-Бой во время боя' или 'Недостаточно ОД для использования Пип-Бой в бою'."
       },
       {
         "name": "Разрешить использование Пип-Бой за Очки Действия",
@@ -421,7 +421,7 @@
     "name": "Индивидуальные особенности Хардкора",
     "internalName": "bHardcoreTweaks",
     "description": "Включает переключение индивидуальных особенностей Хардкора, отдельно от настроек Хардкора игры.",
-    "category": "Gameplay",
+    "category": "Игровой процесс",
     "subsettings": [
       {
         "name": "Вес патронов",
@@ -447,7 +447,7 @@
     "name": "Перегрузка",
     "internalName": "bOverencumberedTweak",
     "description": "Включает бег и прыжки за Очки Действия при перегрузке.",
-    "category": "Gameplay",
+    "category": "Игровой процесс",
     "subsettings": [
       {
         "type": "slider",
@@ -1238,7 +1238,7 @@
     ]
   },
   {
-    "name": "Не отмечать Квест при выполнении задания",
+    "name": "Не отмечать квест при выполнении задания",
     "internalName": "bDontSetQuestWhenCompletingObjectives",
     "description": "Не устанавливает текущий квест при выполнении заданий без активного квеста.",
     "category": "Качество жизни"
@@ -2311,7 +2311,7 @@
   {
     "name": "HUD видим при прицеливании",
     "internalName": "bScopeVisibleAPHP",
-    "description": "Настраивает видимость элементов HUD при прицеливании, напр., отображение HP/AP. Некорректно работает с некоторыми модификациями на интерфейс, например M.U.X",
+    "description": "Настраивает видимость элементов HUD при прицеливании, напр., отображение ОЗ/ОД. Некорректно работает с некоторыми модификациями на интерфейс, например M.U.X",
     "category": "HUD",
     "subsettings": [
       {
@@ -3056,9 +3056,9 @@
     ]
   },
   {
-    "name": "Сохранять выбранную ссылку консоли",
+    "name": "Сохранять выбранный reference консоли",
     "internalName": "bKeepSelectedConsoleRef",
-    "description": "Запоминает выбранную ссылку при закрытии консоли (при условии, что она все еще загружена).",
+    "description": "Запоминает выбранный reference при закрытии консоли (при условии, что он все еще загружен).",
     "category": "Разное"
   },
   {
@@ -3183,7 +3183,7 @@
   {
     "name": "Скрыть завершенные квесты",
     "internalName": "bHideCompletedQuests",
-    "description": "Не отображать завершенные квесты во вкладке Квесты Пип-Боя.",
+    "description": "Не отображать завершенные квесты во вкладке квесты Пип-Боя.",
     "category": "Меню"
   },
   {
@@ -3850,7 +3850,7 @@
     "name": "Запретить разоружение Спутников",
     "internalName": "bNoDisarmCompanions",
     "description": "Предовтращает разоружение спутников во время боя.",
-    "category": "Combat"
+    "category": "Бой"
   },
   {
     "name": "Разрешить стрельбу при приземлении",
@@ -4266,9 +4266,9 @@
     ]
   },
   {
-    "name": "Сон/ожидание при сниженном максимуме HP",
+    "name": "Сон/ожидание при сниженном максимуме ОЗ",
     "internalName": "bAllowSleepWaitWithReducedMaxHealth",
-    "description": "Разрешает сон/ожидание при снижении макс. ОЗ эффектами (например, ?50 ОЗ), но все еще запрещает спать при получении урона.",
+    "description": "Разрешает сон/ожидание при снижении макс. ОЗ эффектами (например, -50 ОЗ), но все еще запрещает спать при получении урона.",
     "category": "Игровой процесс"
   },
   {
@@ -5227,15 +5227,15 @@
     ]
   },
   {
-    "name": "Дебаг Анимаций",
+    "name": "Дебаг анимаций",
     "internalName": "bAnimDebugging",
-    "description": "Вывыодит информацию о текущей проигрываемой анимации в верхнем левом углу окна, для просмотра в реальном времени введите.",
+    "description": "Выводит информацию о текущей проигрываемой анимации в верхнем левом углу окна, для просмотра в реальном времени введите.",
     "category": "Разное"
   },
   {
-    "name": "Поддержка 'Partial' анимаций перезарядки",
+    "name": "Поддержка частичной анимаций перезарядки",
     "internalName": "bPartialReloads",
-    "description": "Добавляет поддержку 'partial' анимаций перезарядки, при перезарядки НЕ пустых магазинов. Игра использует анимации с окончанием '_partial' в названии для игрока, если магазин оружия НЕ пуст.",
+    "description": "Добавляет поддержку частичной анимаций перезарядки, при перезарядке НЕ пустых магазинов. Игра использует анимации с окончанием '_partial' в названии для игрока, если магазин оружия НЕ пуст.",
     "category": "Разное"
   },
   {
@@ -5342,9 +5342,9 @@
     ]
   },
   {
-    "name": "Интервал между звуками боли Игрока",
+    "name": "Интервал между звуками боли игрока",
     "internalName": "bLessFrequentPlayerPainSounds",
-    "description": "Устаналивает минимальный интервал между воспроизведением звуков боли Игрока.",
+    "description": "Устаналивает минимальный интервал между воспроизведением звуков боли игрока.",
     "category": "Качество жизни",
     "subsettings": [
       {
@@ -5512,7 +5512,7 @@
     "name": "Масштаб времени влияет на звуки перезарядки",
     "internalName": "bReloadSoundsAffectedByTimescale",
     "description": "Изменять высоту и длительность звуков перезарядки согласно множителю игрового времени (например, под Турбо).",
-    "category": "Прочее"
+    "category": "Разное"
   },
   {
     "name": "Отключить подтверждение отравления",
@@ -5647,7 +5647,7 @@
     "name": "Сжимать повторяющиеся сообщения консоли",
     "internalName": "bCompressDuplicateConsoleMessages",
     "description": "Добавлять -#количество к подряд идущим одинаковым однострочным сообщениям консоли.",
-    "category": "Прочее"
+    "category": "Разное"
   },
   {
     "name": "Отключить анимаций простоя в Пип-Бое",
@@ -5761,7 +5761,7 @@
     "name": "Отключить предупреждения об ошибочном BSFadeNode",
     "internalName": "bInvalidBSFadeNodePrints",
     "description": "Отключает предупреждение '[Tweaks] Invalid BSFadeNode Detected - Linked Obj ID: %08X'. Если вы автор, рекомендую оставить включенным, чтобы знать, какие ваши меши сломаны. Настройка скрыта (добавьте bInvalidBSFadeNodePrints=0 в раздел [Tweaks] для отключения).",
-    "category": "Прочее",
+    "category": "Разное",
     "priority": -1000
   },
   {
@@ -5821,7 +5821,7 @@
     "name": "Автопродолжение игры",
     "internalName": "bAutoContinueGame",
     "description": "Автоматически продолжать игру в стартовом меню.",
-    "category": "Прочее"
+    "category": "Разное"
   },
   {
     "name": "Сортировать прочие статистики",
@@ -6256,7 +6256,7 @@
     "name": "Клавиша переключения прицелов (SightingNode)",
     "internalName": "iToggleSightingNodeHotkey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Переключает прицел на использование '##SightingNode2' если оно есть у оряжия. Сбрасывается при смене оружия.",
     "subsettings": [
       {
@@ -6277,7 +6277,7 @@
     "name": "Клавиша переключения индикатора скрытности",
     "internalName": "iToggleSneakIndicatorKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Переключает видимость индикатора скрытности.",
     "subsettings": [
       {
@@ -6292,7 +6292,7 @@
     "name": "Клавиша выброса экипированного оружия на землю",
     "internalName": "iDropEquippedWeaponKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Сбрасывает экипированное оружие на землю.",
     "subsettings": [
       {
@@ -6307,7 +6307,7 @@
     "name": "Клавиша переключения плавной камеры",
     "internalName": "iToggleSmoothCameraKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Переключает кинематографическую камеру, сглаживая движения мыши/контроллера.",
     "subsettings": [
       {
@@ -6327,7 +6327,7 @@
     "name": "Клавиша следующей радиостанции",
     "internalName": "iNextRadioStationKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Выбирает следующую радиостанцию.",
     "subsettings": [
       {
@@ -6342,7 +6342,7 @@
     "name": "Клавиша предыдущей радиостанции",
     "internalName": "iPrevRadioStationKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Выбирает предыдущую радиостанцию.",
     "subsettings": [
       {
@@ -6357,7 +6357,7 @@
     "name": "Клавиша пропуска радио",
     "internalName": "iSkipRadioSongKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Пропускает текущую песню или тему радио.",
     "subsettings": [
       {
@@ -6372,7 +6372,7 @@
     "name": "Клавиша открытия карты",
     "internalName": "iOpenMapKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Клавиша для открытия мировой карты в Пип-Бое, клавиша M переключается на карту в любом меню Пип-Боя.",
     "subsettings": [
       {
@@ -6393,7 +6393,7 @@
     "name": "Клавиша повторяющейся активации",
     "internalName": "iRepeatActivateKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Постоянно нажимает клавишу использования, при удержании.",
     "subsettings": [
       {
@@ -6414,7 +6414,7 @@
     "name": "Клавиша скрытия HUD",
     "internalName": "iHideHUDKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Скрывает различные элементы основного HUD.",
     "subsettings": [
       {
@@ -6455,7 +6455,7 @@
     "name": "Клавиша экипировки последнего оружия",
     "internalName": "iEquipLastWeaponKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Экипирует последнее экипированное оружие.",
     "subsettings": [
       {
@@ -6632,16 +6632,16 @@
     ]
   },
   {
-    "name": "Use Long Ammo Name On HUD",
+    "name": "Использовать полное имя боеприпаса в HUD",
     "internalName": "bAmmoLabelUseLongName",
-    "description": "Show the full or Пип-Бой/shorthand name for ammo on the HUD instead of the abbreviation. Requires a UI mod since it clips with the CND bar.",
-    "category": "Menus",
+    "description": "Показывает полное или сокращенное название боеприпаса в HUD вместо аббревиатуры. Требуется мод на интерфейс, так как надпись перекрывается индикатором состояния (ССТ).",
+    "category": "Меню",
     "subsettings": [
       {
-        "name": "Use Пип-Бой Name",
+        "name": "Использовать имя из Пип-Боя",
         "internalName": "bUsePipboyName",
         "internalCategory": "Ammo Label",
-        "description": "Use the shorthand name for ammo (e.g. 20ga S) instead of the full name of the ammo (e.g. 20 Gauge, Slug)."
+        "description": "Использовать сокращённое название боеприпаса (например, 20 кал. п) вместо полного (например, 20 кал., пулевой)."
       }
     ]
   },
@@ -6945,7 +6945,7 @@
   {
     "name": "Исправление источника оружия для испытаний на убийства",
     "internalName": "bFixKillChallengeSourceWeapon",
-    "description": "Теперь для испытаний засчитывается оружие, которым был нанесён последний урон NPC, а не то, что вы держите в руках в момент его смерти. Благодаря этому, например, убийства гранатами будут правильно учитываться. Примечание: оружие или эффекты, использующие команду Kill напрямую, не будут увеличивать счётчик испытаний.",
+    "description": "Теперь для испытаний засчитывается оружие, которым был нанесен последний урон NPC, а не то, что вы держите в руках в момент его смерти. Благодаря этому, например, убийства гранатами будут правильно учитываться. Примечание: оружие или эффекты, использующие команду Kill напрямую, не будут увеличивать счетчик испытаний.",
     "category": "Исправления"
   },
   {
@@ -7338,7 +7338,7 @@
   {
     "name": "Бесплатный выбор 'Дикая пустошь'",
     "internalName": "bFreeWildWasteland",
-    "description": "Позволяет выбрать 'Дикие пустоши' без траты очка черты.",
+    "description": "Позволяет выбрать особенность 'Дикая пустошь' без траты очка черты.",
     "category": "Игровой процесс"
   },
   {
@@ -7840,7 +7840,7 @@
         "name": "Метка оружия",
         "internalName": "sWeaponLabel",
         "internalCategory": "HUD Armor Condition",
-        "description": "Замена метки рядом с индикатором оружия (пусто — стандартная строка)."
+        "description": "Замена метки рядом с индикатором оружия (пусто - стандартная строка)."
       },
       {
         "type": "slider",
@@ -7865,7 +7865,7 @@
         "name": "Порог видимости",
         "internalName": "fVisibilityThreshold",
         "internalCategory": "HUD Armor Condition",
-        "description": "Процент прочности для показа метки (0 — отключить).",
+        "description": "Процент прочности для показа метки (0 - отключить).",
         "minValue": 0,
         "maxValue": 100
       },
@@ -7946,14 +7946,14 @@
         "name": "Сообщение",
         "internalName": "sMessage",
         "internalCategory": "Place Marker Hotkey",
-        "description": "Сообщение при установке маркера (пусто — без сообщения)."
+        "description": "Сообщение при установке маркера (пусто - без сообщения)."
       },
       {
         "type": "input",
         "name": "Звук",
         "internalName": "sSound",
         "internalCategory": "Place Marker Hotkey",
-        "description": "EditorID звука при установке маркера (пусто — без звука)."
+        "description": "EditorID звука при установке маркера (пусто - без звука)."
       }
     ]
   },
@@ -7999,7 +7999,7 @@
         "name": "Время без сознания",
         "internalName": "fUnconsciousTime",
         "internalCategory": "Revive Unconscious Companions",
-        "description": "Длительность нокаута напарников. 0 — использовать стандартное значение fEssentialDeathTime.",
+        "description": "Длительность нокаута напарников. 0 - использовать стандартное значение fEssentialDeathTime.",
         "minValue": 0,
         "maxValue": 300
       },
@@ -8670,7 +8670,7 @@
   {
     "name": "Водные источники показывают H2O",
     "internalName": "bWaterSourcesShowH2O",
-    "description": "Показывать восстанавливаемое H2O вместо HP при просмотре водных источников.",
+    "description": "Показывать восстанавливаемое H2O вместо ОЗ при просмотре водных источников.",
     "category": "HUD",
     "subsettings": [
       {

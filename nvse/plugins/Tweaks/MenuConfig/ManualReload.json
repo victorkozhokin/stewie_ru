@@ -3,7 +3,7 @@
     "name":"Ручная перезарядка",
     "internalName":"bManualReload",
     "description":"Запрещает автоматическую перезарядку при опустошении магазина.",
-    "category":"Combat",
+    "category":"Бой",
     "subsettings":[
       {
         "type":"slider",
