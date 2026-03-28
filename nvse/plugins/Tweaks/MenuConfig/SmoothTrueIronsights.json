@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Плавная камера прицеливания",
+    "internalName": "bSmoothIronsightsCameraTransition",
+    "description": "Делает переход в режим прицеливания (ironsights) плавным, интерполируя положение камеры между обычным видом и видом через прицел.",
+    "category": "Качество жизни",
+    "subsettings": [
+      {
+        "type": "slider",
+        "name": "Время перехода прицеливания",
+        "internalName": "iAimTransitionTimeMS",
+        "internalCategory": "Smooth Iron Sights Camera",
+        "description": "Время перехода между обычной камерой и камерой при прицеливании (в миллисекундах).",
+        "minValue": 0,
+        "maxValue": 500
+      },
+      {
+        "name": "Функция сглаживания",
+        "internalName": "iEasingFunction",
+        "internalCategory": "Smooth Iron Sights Camera",
+        "description": "Какой тип сглаживания будет применен к движению камеры (см. easings.net).",
+        "options": [
+          {
+            "name": "Нет",
+            "value": 0
+          },
+          {
+            "name": "OutSine",
+            "value": 1
+          },
+          {
+            "name": "OutCirc",
+            "value": 2
+          },
+          {
+            "name": "InOutSine",
+            "value": 3
+          },
+          {
+            "name": "InOutCirc",
+            "value": 4
+          },
+          {
+            "name": "OutQuart",
+            "value": 5
+          },
+          {
+            "name": "InOutQuart",
+            "value": 6
+          },
+          {
+            "name": "OutCubic",
+            "value": 7
+          }
+        ]
+      }
+    ]
+  }
+]

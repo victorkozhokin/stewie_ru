@@ -1,0 +1,148 @@
+[
+  {
+    "name": "Управление сохранениями",
+    "internalName": "bImprovedAutosave",
+    "description": "Использует отдельные слоты для автосохранений с возможностью полного сохранения после каждого цикла.",
+    "category": "Качество жизни",
+    "subsettings": [
+      {
+        "type": "hotkey",
+        "name": "Клавиша перезагрузки текущего сохранения",
+        "internalName": "iReloadCurrentSaveKey",
+        "internalCategory": "Save Manager",
+        "description": "Горячая клавиша для перезагрузки текущего сохранения (как при смерти игрока)."
+      },
+      {
+        "type": "hotkey",
+        "name": "Клавиша создания сохранения",
+        "internalName": "iCreateSaveKey",
+        "internalCategory": "Save Manager",
+        "description": "Горячая клавиша для создания именного сохранения."
+      },
+      {
+        "type": "hotkey",
+        "name": "Клавиша инкрементального сохранения",
+        "internalName": "iIncrementalSaveKey",
+        "internalCategory": "Save Manager",
+        "description": "Горячая клавиша для создания сохранения в слоте (Курьер - Сохранение 1, Курьер - Сохранение 2...)."
+      },
+      {
+        "type": "slider",
+        "name": "Максимум инкрементальных сохранений",
+        "internalName": "iMaxIncrementalSaveCount",
+        "internalCategory": "Save Manager",
+        "description": "Количество слотов для инкрементальных сохранений. После достижения максимума начинается перезапись с 0.",
+        "minValue": 0,
+        "maxValue": 20
+      },
+      {
+        "type": "slider",
+        "name": "Таймер автосохранения",
+        "internalName": "iAutoSaveTimer",
+        "internalCategory": "Save Manager",
+        "description": "Задержка между автосохранениями по таймеру (в секундах).",
+        "minValue": 1,
+        "maxValue": 1000
+      },
+      {
+        "type": "slider",
+        "name": "Максимум автосохранений",
+        "internalName": "iMaxAutoSaveCount",
+        "internalCategory": "Save Manager",
+        "description": "Количество слотов для автосохранений. После достижения максимума начинается перезапись с 0.",
+        "minValue": 0,
+        "maxValue": 20
+      },
+      {
+        "name": "Периодическое полное сохранение",
+        "internalName": "bPeriodicFullsave",
+        "internalCategory": "Save Manager",
+        "description": "Создавать именное сохранение каждый раз при достижении максимального слота."
+      },
+      {
+        "name": "Скрыть сообщения автосохранения",
+        "internalName": "bHideAutosaveMessage",
+        "internalCategory": "Save Manager",
+        "description": "Скрывать сообщения автосохранения от мода и от vanilla."
+      },
+      {
+        "name": "Сохранение при обнаружении локации",
+        "internalName": "bSaveOnLocationDiscovered",
+        "internalCategory": "Save Manager",
+        "description": "Автосохранение при обнаружении новой локации."
+      },
+      {
+        "name": "Сохранение при завершении квеста",
+        "internalName": "bSaveOnQuestCompleted",
+        "internalCategory": "Save Manager",
+        "description": "Автосохранение при завершении квеста."
+      },
+      {
+        "name": "Сохранение при выходе из игры",
+        "internalName": "bSaveOnExitGame",
+        "internalCategory": "Save Manager",
+        "description": "Автосохранение при выходе из игры."
+      },
+      {
+        "name": "Сохранение после успешного карманничества",
+        "internalName": "bSaveOnPickpocket",
+        "internalCategory": "Save Manager",
+        "description": "Автосохранение после закрытия меню контейнера при успешном карманничестве (без обнаружения)."
+      },
+      {
+        "name": "Сохранение после крафта",
+        "internalName": "bSaveOnCraft",
+        "internalCategory": "Save Manager",
+        "description": "Автосохранение после закрытия меню рецептов при создании предмета."
+      },
+      {
+        "name": "Сохранение перед повышением уровня",
+        "internalName": "bSavePreLevelUp",
+        "internalCategory": "Save Manager",
+        "description": "Автосохранение перед открытием меню повышения уровня."
+      },
+      {
+        "type": "slider",
+        "name": "Минимальный интервал автосохранения",
+        "internalName": "iMinAutosaveInterval",
+        "internalCategory": "Save Manager",
+        "description": "Запрет автосохранений в течение указанного времени после предыдущего (в секундах).",
+        "minValue": 0,
+        "maxValue": 1000
+      },
+      {
+        "type": "slider",
+        "name": "Интервал смены слота инкрементального сохранения",
+        "internalName": "iIncrementalSaveSlotChangeInterval",
+        "internalCategory": "Save Manager",
+        "description": "Увеличивать слот инкрементального сохранения только если прошло указанное время с прошлого изменения (в секундах).",
+        "minValue": 0,
+        "maxValue": 1000
+      },
+      {
+        "name": "Без автосохранений в бою",
+        "internalName": "bPreventAutosaveInCombat",
+        "internalCategory": "Save Manager",
+        "description": "Запретить автосохранения по таймеру в бою. Сохранение происходит через 0-8 секунд после выхода из боя."
+      },
+      {
+        "name": "Без автосохранений в godmode",
+        "internalName": "bPreventAutosaveInTGM",
+        "internalCategory": "Save Manager",
+        "description": "Запретить автосохранения по таймеру, если включен godmode."
+      },
+      {
+        "name": "Без скриптовых сохранений",
+        "internalName": "bPreventScriptedSaves",
+        "internalCategory": "Save Manager",
+        "description": "Запретить скриптам сохранять игру (команды SaveGame, ForceSave, AutoSave, SystemSave). Не влияет на ванильные автосохранения."
+      },
+      {
+        "name": "Кнопка быстрого сохранения в меню паузы",
+        "internalName": "bReplaceContinueWithQuicksave",
+        "internalCategory": "Save Manager",
+        "description": "Заменить кнопку \"Продолжить\" в меню паузы на кнопку создания инкрементального сохранения."
+      }
+    ]
+  }
+]

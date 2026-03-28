@@ -421,7 +421,7 @@
     "name": "Индивидуальные особенности Хардкора",
     "internalName": "bHardcoreTweaks",
     "description": "Включает переключение индивидуальных особенностей Хардкора, отдельно от настроек Хардкора игры.",
-    "category": "Gameplay",
+    "category": "Игровой процесс",
     "subsettings": [
       {
         "name": "Вес патронов",
@@ -447,7 +447,7 @@
     "name": "Перегрузка",
     "internalName": "bOverencumberedTweak",
     "description": "Включает бег и прыжки за Очки Действия при перегрузке.",
-    "category": "Gameplay",
+    "category": "Игровой процесс",
     "subsettings": [
       {
         "type": "slider",
@@ -3850,7 +3850,7 @@
     "name": "Запретить разоружение Спутников",
     "internalName": "bNoDisarmCompanions",
     "description": "Предовтращает разоружение спутников во время боя.",
-    "category": "Combat"
+    "category": "Бой"
   },
   {
     "name": "Разрешить стрельбу при приземлении",
@@ -6256,7 +6256,7 @@
     "name": "Клавиша переключения прицелов (SightingNode)",
     "internalName": "iToggleSightingNodeHotkey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Переключает прицел на использование '##SightingNode2' если оно есть у оряжия. Сбрасывается при смене оружия.",
     "subsettings": [
       {
@@ -6277,7 +6277,7 @@
     "name": "Клавиша переключения индикатора скрытности",
     "internalName": "iToggleSneakIndicatorKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Переключает видимость индикатора скрытности.",
     "subsettings": [
       {
@@ -6292,7 +6292,7 @@
     "name": "Клавиша выброса экипированного оружия на землю",
     "internalName": "iDropEquippedWeaponKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Сбрасывает экипированное оружие на землю.",
     "subsettings": [
       {
@@ -6307,7 +6307,7 @@
     "name": "Клавиша переключения плавной камеры",
     "internalName": "iToggleSmoothCameraKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Переключает кинематографическую камеру, сглаживая движения мыши/контроллера.",
     "subsettings": [
       {
@@ -6327,7 +6327,7 @@
     "name": "Клавиша следующей радиостанции",
     "internalName": "iNextRadioStationKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Выбирает следующую радиостанцию.",
     "subsettings": [
       {
@@ -6342,7 +6342,7 @@
     "name": "Клавиша предыдущей радиостанции",
     "internalName": "iPrevRadioStationKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Выбирает предыдущую радиостанцию.",
     "subsettings": [
       {
@@ -6357,7 +6357,7 @@
     "name": "Клавиша пропуска радио",
     "internalName": "iSkipRadioSongKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Пропускает текущую песню или тему радио.",
     "subsettings": [
       {
@@ -6372,7 +6372,7 @@
     "name": "Клавиша открытия карты",
     "internalName": "iOpenMapKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Клавиша для открытия мировой карты в Пип-Бое, клавиша M переключается на карту в любом меню Пип-Боя.",
     "subsettings": [
       {
@@ -6393,7 +6393,7 @@
     "name": "Клавиша повторяющейся активации",
     "internalName": "iRepeatActivateKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Постоянно нажимает клавишу использования, при удержании.",
     "subsettings": [
       {
@@ -6414,7 +6414,7 @@
     "name": "Клавиша скрытия HUD",
     "internalName": "iHideHUDKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Скрывает различные элементы основного HUD.",
     "subsettings": [
       {
@@ -6455,7 +6455,7 @@
     "name": "Клавиша экипировки последнего оружия",
     "internalName": "iEquipLastWeaponKey",
     "internalCategory": "Hotkeys",
-    "category": "Hotkeys",
+    "category": "Горячие клавиши",
     "description": "Экипирует последнее экипированное оружие.",
     "subsettings": [
       {
@@ -6632,16 +6632,16 @@
     ]
   },
   {
-    "name": "Use Long Ammo Name On HUD",
+    "name": "Полные названия патронов на HUD",
     "internalName": "bAmmoLabelUseLongName",
-    "description": "Show the full or Пип-Бой/shorthand name for ammo on the HUD instead of the abbreviation. Requires a UI mod since it clips with the CND bar.",
-    "category": "Menus",
+    "description": "Показывать полное или короткое (Пип-Бой) название патронов на HUD вместо сокращения. Требует мода на интерфейс, так как текст может налезать на индикатор состояния оружия.",
+    "category": "Меню",
     "subsettings": [
       {
-        "name": "Use Пип-Бой Name",
+        "name": "Использовать название из Пип-Боя",
         "internalName": "bUsePipboyName",
         "internalCategory": "Ammo Label",
-        "description": "Use the shorthand name for ammo (e.g. 20ga S) instead of the full name of the ammo (e.g. 20 Gauge, Slug)."
+        "description": "Использовать короткое название патронов из Пип-Боя (например «20ga S»), вместо полного названия (например «20 Gauge, Slug»)."
       }
     ]
   },

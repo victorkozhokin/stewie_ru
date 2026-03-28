@@ -3,7 +3,7 @@
     "name":"Подготовка гранат",
     "internalName":"bCookableGrenades",
     "description":"Удерживание гранаты уменьшает таймер детонации.",
-    "category":"Combat",
+    "category":"Бой",
     "subsettings":[
       {
         "name":"Без увеличения дальности броска",
